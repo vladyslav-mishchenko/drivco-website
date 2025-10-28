@@ -1,0 +1,45 @@
+.product-card .vin{
+    display: block;
+}
+
+.product-card .product-content .price-location .price::after {
+  content: none;
+}
+
+.news-section .news-card .content > h6{
+    border-bottom: none;
+}
+
+/* nice select */
+.nice-select {
+    background: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    height: auto;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nice-select:hover {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+.nice-select:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #46D993;
+    border-bottom: 1px solid #46D993;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: rotate(45deg);
+    margin-top: -4px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+/* end nice select */
