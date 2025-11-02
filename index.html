@@ -2,50 +2,49 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet" />
 
-    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
 
-    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
 
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="assets/css/boxicons.min.css" rel="stylesheet" />
 
-    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/css/nice-select.css" rel="stylesheet" />
 
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
     <title>Drivco | HOME</title>
-    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
+    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20" />
 </head>
 
 <body class="tt-magic-cursor">
     <div class="top-bar">
         <div class="company-logo">
-            <a href="index.html"><img src="assets/img/logo.svg" alt></a>
+            <a href="index.html"><img src="assets/img/logo.svg" alt /></a>
         </div>
         <div class="search-area">
             <form>
                 <div class="form-inner">
-                    <input type="text" placeholder="VIN">
+                    <input type="text" placeholder="VIN" />
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </div>
             </form>
@@ -67,14 +66,46 @@
 
     <header class="header-area style-1">
         <div class="header-logo d-lg-none d-flex">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>
+            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg" /></a>
         </div>
+
         <div class="main-menu">
-            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
-                <div class="mobile-logo-wrap">
-                    <a href="index.html"><img alt="image" src="assets/img/logo.svg"></a>
+            <div class="mmenu-top mobile-logo-area d-lg-none">
+                <div class="mmenu-top-columns">
+                    <div class="c1">
+                        <a href="index.html">
+                            <img class="mlogo" alt="logo" src="assets/img/logo.svg" />
+                        </a>
+                    </div>
+
+                    <div class="c2">
+                        <div class="mlanguages">
+                            <select id="languageSelect" class="nice-select">
+                                <option value="en" selected>EN</option>
+                                <option value="fr">FR</option>
+                                <option value="de">DE</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="m-vin-search mobile-logo-area d-lg-none">
+                <form action="" class="m-vin-search-form">
+                    <div class="m-vin-search-grid">
+                        <div class="input">
+                            <input type="text" placeholder="VIN" />
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <ul class="menu-list">
                 <li class="active">
                     <a href="index.html" class="">Home</a>
@@ -106,6 +137,7 @@
                     <a href="contact.html" class="drop-down">CONTACT</a>
                 </li>
             </ul>
+
             <div class="topbar-right d-lg-none d-block">
                 <a class="primary-btn3" href="signup.html">
                     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -116,6 +148,7 @@
                     SIGN UP
                 </a>
             </div>
+
             <div class="hotline-area d-lg-none d-flex">
                 <div class="icon">
                     <svg width="26" height="27" viewBox="0 0 26 27" xmlns="http://www.w3.org/2000/svg">
@@ -138,9 +171,9 @@
             </div>
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
-            <div class="hotline-area d-xl-flex d-none">
+            <div class="hotline-area d-xl-flex">
                 <div class="icon">
-                    <img src="assets/img/home1/icon/hotline-icon.svg" alt>
+                    <img src="assets/img/home1/icon/hotline-icon.svg" alt />
                 </div>
                 <div class="content">
                     <span>To More Inquiry</span>
@@ -154,7 +187,7 @@
                     <option value="de">DE</option>
                 </select>
             </div>
-            <div class="sidebar-button mobile-menu-btn ">
+            <div class="sidebar-button mobile-menu-btn">
                 <span></span>
             </div>
         </div>
@@ -177,8 +210,10 @@
                             </svg>
                         </span>
                         <h1>To Best Way Buy <span>Dream Car.</span></h1>
-                        <p>Car dealerships may sell new cars from one or several manufacturers, as well as used cars
-                            from a variety of sources.</p>
+                        <p>
+                            Car dealerships may sell new cars from one or several manufacturers,
+                            as well as used cars from a variety of sources.
+                        </p>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-5">
@@ -210,7 +245,9 @@
                                 </select>
                             </div>
                             <div class="form-inner last">
-                                <button class="primary-btn1" type="submit">SEARCH 12463 VEHICLES</button>
+                                <button class="primary-btn1" type="submit">
+                                    SEARCH 12463 VEHICLES
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -218,7 +255,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="quick-link-area">
         <ul class="wow fadeInUp" data-wow-delay="200ms">
@@ -301,7 +337,6 @@
         </ul>
     </div>
 
-
     <div class="most-search-area pt-90 pb-90 mb-100">
         <div class="container">
             <div class="row mb-60 wow fadeInUp" data-wow-delay="200ms">
@@ -338,16 +373,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -368,7 +403,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14491888" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14491888" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -384,7 +419,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1439238" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1439238" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -406,7 +441,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1432322" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1432322" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -460,16 +495,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -490,7 +525,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1449455" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1449455" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -506,7 +541,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14395" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14395" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -528,7 +563,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14326" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14326" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -582,16 +617,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -607,13 +642,12 @@
                                             <div class="price">
                                                 <strong>$17,656.00</strong>
                                             </div>
-
                                         </div>
                                         <ul class="features">
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14497" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14497" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -629,7 +663,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1855855" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1855855" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -651,7 +685,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1432777" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1432777" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -705,16 +739,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -735,7 +769,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1449888" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1449888" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -751,7 +785,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1439999" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1439999" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -773,7 +807,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143299" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143299" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -827,16 +861,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -857,7 +891,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144966" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144966" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -873,7 +907,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143901" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143901" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -895,7 +929,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143202" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143202" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -949,16 +983,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -979,7 +1013,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144904" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144904" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -995,7 +1029,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143905" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143905" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1017,7 +1051,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143206" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143206" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1071,16 +1105,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1096,13 +1130,12 @@
                                             <div class="price">
                                                 <strong>$17,656.00</strong>
                                             </div>
-
                                         </div>
                                         <ul class="features">
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144907" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144907" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1118,7 +1151,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143911" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143911" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1140,7 +1173,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143222" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143222" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1194,16 +1227,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-4.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-4.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-2.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-2.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-3.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-3.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-1.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-1.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1224,7 +1257,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144933" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144933" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1240,7 +1273,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143944" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143944" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1262,7 +1295,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143255" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143255" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1303,14 +1336,13 @@
         </div>
     </div>
 
-
     <div class="recent-product-section mb-100">
         <div class="container">
             <div class="row mb-60 wow fadeInUp" data-wow-delay="200ms">
                 <div class="col-lg-12 d-flex align-items-end justify-content-between flex-wrap gap-4">
                     <div class="section-title1">
                         <span>Recent Launched </span>
-                        <h2>Recent Launched Car </h2>
+                        <h2>Recent Launched Car</h2>
                     </div>
                 </div>
             </div>
@@ -1337,24 +1369,26 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-5.png" alt="image">
+                                                <img src="assets/img/home1/product-img-5.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-5.png" alt="image">
+                                                <img src="assets/img/home1/product-img-5.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-5.png" alt="image">
+                                                <img src="assets/img/home1/product-img-5.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-5.png" alt="image">
+                                                <img src="assets/img/home1/product-img-5.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-content">
-                                    <h5><a href="car-details.html">Mercedes-Benz C-Class-2023
+                                    <h5>
+                                        <a href="car-details.html">Mercedes-Benz C-Class-2023
                                             <span class="vin">4S3BL616X86201130</span>
-                                        </a></h5>
+                                        </a>
+                                    </h5>
                                     <div class="price-location">
                                         <div class="price">
                                             <strong>$7,656.00</strong>
@@ -1364,7 +1398,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_76" style="mask-type:alpha"
+                                                <mask id="mask0_611_76" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1380,7 +1414,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_77" style="mask-type:alpha"
+                                                <mask id="mask0_611_77" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1402,7 +1436,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_78" style="mask-type:alpha"
+                                                <mask id="mask0_611_78" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1455,16 +1489,16 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-6.png" alt="image">
+                                                <img src="assets/img/home1/product-img-6.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-6.png" alt="image">
+                                                <img src="assets/img/home1/product-img-6.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-6.png" alt="image">
+                                                <img src="assets/img/home1/product-img-6.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-6.png" alt="image">
+                                                <img src="assets/img/home1/product-img-6.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -1485,7 +1519,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_79" style="mask-type:alpha"
+                                                <mask id="mask0_611_79" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1501,7 +1535,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_80" style="mask-type:alpha"
+                                                <mask id="mask0_611_80" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1523,7 +1557,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_81" style="mask-type:alpha"
+                                                <mask id="mask0_611_81" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1576,16 +1610,16 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-7.png" alt="image">
+                                                <img src="assets/img/home1/product-img-7.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-7.png" alt="image">
+                                                <img src="assets/img/home1/product-img-7.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-7.png" alt="image">
+                                                <img src="assets/img/home1/product-img-7.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-7.png" alt="image">
+                                                <img src="assets/img/home1/product-img-7.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -1606,7 +1640,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_82" style="mask-type:alpha"
+                                                <mask id="mask0_611_82" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1622,7 +1656,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_83" style="mask-type:alpha"
+                                                <mask id="mask0_611_83" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1644,7 +1678,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_84" style="mask-type:alpha"
+                                                <mask id="mask0_611_84" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1697,16 +1731,16 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-8.png" alt="image">
+                                                <img src="assets/img/home1/product-img-8.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-8.png" alt="image">
+                                                <img src="assets/img/home1/product-img-8.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-8.png" alt="image">
+                                                <img src="assets/img/home1/product-img-8.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-8.png" alt="image">
+                                                <img src="assets/img/home1/product-img-8.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -1727,7 +1761,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_85" style="mask-type:alpha"
+                                                <mask id="mask0_611_85" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1743,7 +1777,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_86" style="mask-type:alpha"
+                                                <mask id="mask0_611_86" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1765,7 +1799,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_87" style="mask-type:alpha"
+                                                <mask id="mask0_611_87" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1818,16 +1852,16 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-9.png" alt="image">
+                                                <img src="assets/img/home1/product-img-9.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-9.png" alt="image">
+                                                <img src="assets/img/home1/product-img-9.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-9.png" alt="image">
+                                                <img src="assets/img/home1/product-img-9.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-9.png" alt="image">
+                                                <img src="assets/img/home1/product-img-9.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -1848,7 +1882,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_88" style="mask-type:alpha"
+                                                <mask id="mask0_611_88" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1864,7 +1898,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_89" style="mask-type:alpha"
+                                                <mask id="mask0_611_89" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1886,7 +1920,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_90" style="mask-type:alpha"
+                                                <mask id="mask0_611_90" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1939,16 +1973,16 @@
                                     <div class="swiper product-img-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-10.png" alt="image">
+                                                <img src="assets/img/home1/product-img-10.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-10.png" alt="image">
+                                                <img src="assets/img/home1/product-img-10.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-10.png" alt="image">
+                                                <img src="assets/img/home1/product-img-10.png" alt="image" />
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="assets/img/home1/product-img-10.png" alt="image">
+                                                <img src="assets/img/home1/product-img-10.png" alt="image" />
                                             </div>
                                         </div>
                                     </div>
@@ -1969,7 +2003,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_91" style="mask-type:alpha"
+                                                <mask id="mask0_611_91" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -1985,7 +2019,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_92" style="mask-type:alpha"
+                                                <mask id="mask0_611_92" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -2007,7 +2041,7 @@
                                         <li>
                                             <svg width="13" height="13" viewBox="0 0 13 13"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="mask0_611_93" style="mask-type:alpha"
+                                                <mask id="mask0_611_93" style="mask-type: alpha"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                     <rect width="13" height="13" />
                                                 </mask>
@@ -2046,7 +2080,6 @@
         </div>
     </div>
 
-
     <div class="news-section pt-90 pb-90">
         <div class="container">
             <div class="row mb-60 wow fadeInUp" data-wow-delay="200ms">
@@ -2061,10 +2094,11 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="news-card">
                         <div class="news-img">
-                            <a href="car-details.html"><img src="assets/img/home1/news-01.png" alt></a>
+                            <a href="car-details.html"><img src="assets/img/home1/news-01.png" alt /></a>
                         </div>
                         <div class="content">
-                            <h6><a href="car-details.html">The Car Enthusiast: Exploring the World of Cars and
+                            <h6>
+                                <a href="car-details.html">The Car Enthusiast: Exploring the World of Cars and
                                     Driving.</a>
                             </h6>
                         </div>
@@ -2073,10 +2107,11 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                     <div class="news-card">
                         <div class="news-img">
-                            <a href="car-details.html"><img src="assets/img/home1/news-02.png" alt></a>
+                            <a href="car-details.html"><img src="assets/img/home1/news-02.png" alt /></a>
                         </div>
                         <div class="content">
-                            <h6><a href="car-details.html">The Best Car Brands for Performance and Reliability.</a>
+                            <h6>
+                                <a href="car-details.html">The Best Car Brands for Performance and Reliability.</a>
                             </h6>
                         </div>
                     </div>
@@ -2084,10 +2119,11 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                     <div class="news-card">
                         <div class="news-img">
-                            <a href="car-details.html"><img src="assets/img/home1/news-03.png" alt></a>
+                            <a href="car-details.html"><img src="assets/img/home1/news-03.png" alt /></a>
                         </div>
                         <div class="content">
-                            <h6><a href="car-details.html">The Environmental Impact of Cars and How to Minimize It.</a>
+                            <h6>
+                                <a href="car-details.html">The Environmental Impact of Cars and How to Minimize It.</a>
                             </h6>
                         </div>
                     </div>
@@ -2096,12 +2132,11 @@
         </div>
     </div>
 
-
     <footer>
         <div class="container-fluid">
             <div class="footer-top">
                 <div
-                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5 ">
+                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5">
                     <div class="col d-flex justify-content-lg-center justify-content-sm-end">
                         <div class="footer-widget">
                             <div class="widget-title">
@@ -2113,7 +2148,9 @@
                                     <li><a href="single-brand-category.html">BMW</a></li>
                                     <li><a href="single-brand-category.html">Chevrolet</a></li>
                                     <li><a href="single-brand-category.html">Hyundai</a></li>
-                                    <li><a href="single-brand-category.html">Mercedes-Benz</a></li>
+                                    <li>
+                                        <a href="single-brand-category.html">Mercedes-Benz</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2128,8 +2165,12 @@
                                     <li><a href="car-listing-left-sidebar.html">Pickup</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Sedan</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Wagon</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Family MPV</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Sport Coupe</a></li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Family MPV</a>
+                                    </li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Sport Coupe</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2151,7 +2192,7 @@
             </div>
             <div class="footer-center">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt></a>
+                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt /></a>
                 </div>
                 <div class="contact-area">
                     <div class="hotline-area">
@@ -2176,7 +2217,8 @@
                         </div>
                         <div class="content">
                             <span>To Send Mail</span>
-                            <h6><a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
+                            <h6>
+                                <a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
                                         class="__cf_email__"
                                         data-cfemail="046d6a626b446369656d682a676b69">[email&nbsp;protected]</span></a>
                             </h6>
@@ -2196,7 +2238,6 @@
             </div>
         </div>
     </footer>
-
 
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -2230,16 +2271,16 @@
 
     <script src="assets/js/custom.js"></script>
     <script>
-        $(".marquee_text").marquee({
-            direction: "left",
+        $('.marquee_text').marquee({
+            direction: 'left',
             duration: 25000,
             gap: 50,
             delayBeforeStart: 0,
             duplicated: true,
             startVisible: true,
         });
-        $(".marquee_text2").marquee({
-            direction: "left",
+        $('.marquee_text2').marquee({
+            direction: 'left',
             duration: 25000,
             gap: 50,
             delayBeforeStart: 0,

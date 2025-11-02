@@ -2,52 +2,51 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet" />
 
-    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
 
-    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
 
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="assets/css/boxicons.min.css" rel="stylesheet" />
 
-    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/css/intlTelInput.css" rel="stylesheet" />
 
-    <link href="assets/css/intlTelInput.css" rel="stylesheet">
+    <link href="assets/css/nice-select.css" rel="stylesheet" />
 
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-
-    <title>Drivco | Car</title>
-    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
+    <title>Drivco | Car Details</title>
+    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20" />
 </head>
 
 <body class="tt-magic-cursor">
     <div class="top-bar">
         <div class="company-logo">
-            <a href="index.html"><img src="assets/img/logo.svg" alt></a>
+            <a href="index.html"><img src="assets/img/logo.svg" alt /></a>
         </div>
         <div class="search-area">
             <form>
                 <div class="form-inner">
-                    <input type="text" placeholder="VIN">
+                    <input type="text" placeholder="VIN" />
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </div>
             </form>
@@ -69,14 +68,46 @@
 
     <header class="header-area style-1">
         <div class="header-logo d-lg-none d-flex">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>
+            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg" /></a>
         </div>
+
         <div class="main-menu">
-            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
-                <div class="mobile-logo-wrap">
-                    <a href="index.html"><img alt="image" src="assets/img/logo.svg"></a>
+            <div class="mmenu-top mobile-logo-area d-lg-none">
+                <div class="mmenu-top-columns">
+                    <div class="c1">
+                        <a href="index.html">
+                            <img class="mlogo" alt="logo" src="assets/img/logo.svg" />
+                        </a>
+                    </div>
+
+                    <div class="c2">
+                        <div class="mlanguages">
+                            <select id="languageSelect" class="nice-select">
+                                <option value="en" selected>EN</option>
+                                <option value="fr">FR</option>
+                                <option value="de">DE</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="m-vin-search mobile-logo-area d-lg-none">
+                <form action="" class="m-vin-search-form">
+                    <div class="m-vin-search-grid">
+                        <div class="input">
+                            <input type="text" placeholder="VIN" />
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <ul class="menu-list">
                 <li class="active">
                     <a href="index.html" class="">Home</a>
@@ -108,6 +139,7 @@
                     <a href="contact.html" class="drop-down">CONTACT</a>
                 </li>
             </ul>
+
             <div class="topbar-right d-lg-none d-block">
                 <a class="primary-btn3" href="signup.html">
                     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -118,6 +150,7 @@
                     SIGN UP
                 </a>
             </div>
+
             <div class="hotline-area d-lg-none d-flex">
                 <div class="icon">
                     <svg width="26" height="27" viewBox="0 0 26 27" xmlns="http://www.w3.org/2000/svg">
@@ -140,9 +173,9 @@
             </div>
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
-            <div class="hotline-area d-xl-flex d-none">
+            <div class="hotline-area d-xl-flex">
                 <div class="icon">
-                    <img src="assets/img/home1/icon/hotline-icon.svg" alt>
+                    <img src="assets/img/home1/icon/hotline-icon.svg" alt />
                 </div>
                 <div class="content">
                     <span>To More Inquiry</span>
@@ -156,12 +189,11 @@
                     <option value="de">DE</option>
                 </select>
             </div>
-            <div class="sidebar-button mobile-menu-btn ">
+            <div class="sidebar-button mobile-menu-btn">
                 <span></span>
             </div>
         </div>
     </header>
-
 
     <div class="inner-page-banner">
         <div class="banner-wrapper">
@@ -186,7 +218,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-5 d-lg-flex d-none align-items-center justify-content-end">
                             <div class="banner-img">
-                                <img src="assets/img/inner-page/car-dt-banner-img.png" alt>
+                                <img src="assets/img/inner-page/car-dt-banner-img.png" alt />
                             </div>
                         </div>
                     </div>
@@ -194,7 +226,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="car-details-area pt-100 mb-100">
         <div class="container">
@@ -225,13 +256,16 @@
                                             <div class="swiper product-img-slider">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/product-img-02.png" alt="image">
+                                                        <img src="assets/img/inner-page/product-img-02.png"
+                                                            alt="image" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/product-img-03.png" alt="image">
+                                                        <img src="assets/img/inner-page/product-img-03.png"
+                                                            alt="image" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/product-img-04.png" alt="image">
+                                                        <img src="assets/img/inner-page/product-img-04.png"
+                                                            alt="image" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,13 +291,13 @@
                                             <div class="swiper product-img-slider">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/interior-01.png" alt="image">
+                                                        <img src="assets/img/inner-page/interior-01.png" alt="image" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/interior-02.png" alt="image">
+                                                        <img src="assets/img/inner-page/interior-02.png" alt="image" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img src="assets/img/inner-page/interior-03.png" alt="image">
+                                                        <img src="assets/img/inner-page/interior-03.png" alt="image" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,7 +307,7 @@
                                         aria-labelledby="video-clip-tab">
                                         <div class="video-area">
                                             <video autoplay loop="loop" muted preload="auto" controls>
-                                                <source src="assets/video/home4/car-video.mp4" type="video/mp4">
+                                                <source src="assets/video/home4/car-video.mp4" type="video/mp4" />
                                             </video>
                                         </div>
                                     </div>
@@ -299,40 +333,52 @@
                                                     <div class="swiper-slide">
                                                         <div class="car-color-wrap">
                                                             <div class="car-img">
-                                                                <img src="assets/img/inner-page/color-car-05.png" alt>
+                                                                <img src="assets/img/inner-page/color-car-05.png" alt />
                                                             </div>
                                                             <div class="content">
-                                                                <h5>Lamborghini Murciélago (Black)</h5>
+                                                                <h5>
+                                                                    Lamborghini Murciélago
+                                                                    (Black)
+                                                                </h5>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="car-color-wrap">
                                                             <div class="car-img">
-                                                                <img src="assets/img/inner-page/color-car-06.png" alt>
+                                                                <img src="assets/img/inner-page/color-car-06.png" alt />
                                                             </div>
                                                             <div class="content">
-                                                                <h5>Lamborghini Murciélago (Blue)</h5>
+                                                                <h5>
+                                                                    Lamborghini Murciélago
+                                                                    (Blue)
+                                                                </h5>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="car-color-wrap">
                                                             <div class="car-img">
-                                                                <img src="assets/img/inner-page/color-car-07.png" alt>
+                                                                <img src="assets/img/inner-page/color-car-07.png" alt />
                                                             </div>
                                                             <div class="content">
-                                                                <h5>Lamborghini Murciélago (Pink)</h5>
+                                                                <h5>
+                                                                    Lamborghini Murciélago
+                                                                    (Pink)
+                                                                </h5>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="car-color-wrap">
                                                             <div class="car-img">
-                                                                <img src="assets/img/inner-page/color-car-08.png" alt>
+                                                                <img src="assets/img/inner-page/color-car-08.png" alt />
                                                             </div>
                                                             <div class="content">
-                                                                <h5>Lamborghini Murciélago (Orange)</h5>
+                                                                <h5>
+                                                                    Lamborghini Murciélago
+                                                                    (Orange)
+                                                                </h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -354,7 +400,7 @@
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     viewBox="0 0 20 20">
-                                                    <mask id="mask0_1673_2706" style="mask-type:alpha"
+                                                    <mask id="mask0_1673_2706" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                                                         <rect width="20" height="20" fill="#D9D9D9" />
                                                     </mask>
@@ -388,7 +434,7 @@
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     viewBox="0 0 20 20">
-                                                    <mask id="mask0_1673_2691" style="mask-type:alpha"
+                                                    <mask id="mask0_1673_2691" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                                                         <rect width="20" height="20" fill="#D9D9D9" />
                                                     </mask>
@@ -422,7 +468,7 @@
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     viewBox="0 0 20 20">
-                                                    <mask id="mask0_1673_2677" style="mask-type:alpha"
+                                                    <mask id="mask0_1673_2677" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                                                         <rect width="20" height="20" fill="#D9D9D9" />
                                                     </mask>
@@ -479,7 +525,7 @@
                                 <ul>
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/img/inner-page/icon/mileage.svg" alt>
+                                            <img src="assets/img/inner-page/icon/mileage.svg" alt />
                                         </div>
                                         <div class="content">
                                             <h6>25,100 miles</h6>
@@ -488,7 +534,7 @@
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/img/inner-page/icon/engine.svg" alt>
+                                            <img src="assets/img/inner-page/icon/engine.svg" alt />
                                         </div>
                                         <div class="content">
                                             <h6>22,231 cc</h6>
@@ -497,7 +543,7 @@
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/img/inner-page/icon/fuel.svg" alt>
+                                            <img src="assets/img/inner-page/icon/fuel.svg" alt />
                                         </div>
                                         <div class="content">
                                             <h6>Petrol + Gas</h6>
@@ -506,7 +552,7 @@
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/img/inner-page/icon/condition.svg" alt>
+                                            <img src="assets/img/inner-page/icon/condition.svg" alt />
                                         </div>
                                         <div class="content">
                                             <h6>Used Car</h6>
@@ -529,7 +575,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Premium Wheel
+                                        </svg>
+                                        Premium Wheel
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -538,7 +585,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Moonroof
+                                        </svg>
+                                        Moonroof
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -547,7 +595,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Premium Audio
+                                        </svg>
+                                        Premium Audio
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -556,7 +605,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Navigation
+                                        </svg>
+                                        Navigation
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -565,7 +615,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Front Heated Seats
+                                        </svg>
+                                        Front Heated Seats
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -574,7 +625,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Premium Seat Material
+                                        </svg>
+                                        Premium Seat Material
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -583,7 +635,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Bluetooth
+                                        </svg>
+                                        Bluetooth
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -592,7 +645,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Premium Seat Material
+                                        </svg>
+                                        Premium Seat Material
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -601,7 +655,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Front Heated Seats
+                                        </svg>
+                                        Front Heated Seats
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -610,7 +665,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Remote Engine Start
+                                        </svg>
+                                        Remote Engine Start
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -619,7 +675,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Blind Spot System
+                                        </svg>
+                                        Blind Spot System
                                     </li>
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -628,7 +685,8 @@
                                                 d="M6 11.25C4.60761 11.25 3.27226 10.6969 2.28769 9.71231C1.30312 8.72774 0.75 7.39239 0.75 6C0.75 4.60761 1.30312 3.27226 2.28769 2.28769C3.27226 1.30312 4.60761 0.75 6 0.75C7.39239 0.75 8.72774 1.30312 9.71231 2.28769C10.6969 3.27226 11.25 4.60761 11.25 6C11.25 7.39239 10.6969 8.72774 9.71231 9.71231C8.72774 10.6969 7.39239 11.25 6 11.25ZM6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 4.4087 11.3679 2.88258 10.2426 1.75736C9.11742 0.632141 7.5913 0 6 0C4.4087 0 2.88258 0.632141 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.88258 11.3679 4.4087 12 6 12Z" />
                                             <path
                                                 d="M8.22751 3.72747C8.22217 3.73264 8.21716 3.73816 8.21251 3.74397L5.60776 7.06272L4.03801 5.49222C3.93138 5.39286 3.79034 5.33876 3.64462 5.34134C3.49889 5.34391 3.35985 5.40294 3.25679 5.506C3.15373 5.60906 3.0947 5.7481 3.09213 5.89382C3.08956 6.03955 3.14365 6.18059 3.24301 6.28722L5.22751 8.27247C5.28097 8.32583 5.34463 8.36788 5.4147 8.39611C5.48476 8.42433 5.5598 8.43816 5.63532 8.43676C5.71084 8.43536 5.78531 8.41876 5.85428 8.38796C5.92325 8.35716 5.98531 8.31278 6.03676 8.25747L9.03076 4.51497C9.13271 4.40796 9.18845 4.26514 9.18593 4.11737C9.18341 3.9696 9.12284 3.82875 9.0173 3.72529C8.91177 3.62182 8.76975 3.56405 8.62196 3.56446C8.47417 3.56486 8.33247 3.62342 8.22751 3.72747Z" />
-                                        </svg> Multi-Zone Climate Control
+                                        </svg>
+                                        Multi-Zone Climate Control
                                     </li>
                                 </ul>
                             </div>
@@ -707,7 +765,7 @@
                                         <div class="swiper-slide">
                                             <div class="car-color-wrap">
                                                 <div class="car-img">
-                                                    <img src="assets/img/inner-page/color-car-01.png" alt>
+                                                    <img src="assets/img/inner-page/color-car-01.png" alt />
                                                 </div>
                                                 <div class="content">
                                                     <h6>Lamborghini Murciélago (Black)</h6>
@@ -717,7 +775,7 @@
                                         <div class="swiper-slide">
                                             <div class="car-color-wrap">
                                                 <div class="car-img">
-                                                    <img src="assets/img/inner-page/color-car-02.png" alt>
+                                                    <img src="assets/img/inner-page/color-car-02.png" alt />
                                                 </div>
                                                 <div class="content">
                                                     <h6>Lamborghini Murciélago (Blue)</h6>
@@ -727,7 +785,7 @@
                                         <div class="swiper-slide">
                                             <div class="car-color-wrap">
                                                 <div class="car-img">
-                                                    <img src="assets/img/inner-page/color-car-03.png" alt>
+                                                    <img src="assets/img/inner-page/color-car-03.png" alt />
                                                 </div>
                                                 <div class="content">
                                                     <h6>Lamborghini Murciélago (Pink)</h6>
@@ -737,7 +795,7 @@
                                         <div class="swiper-slide">
                                             <div class="car-color-wrap">
                                                 <div class="car-img">
-                                                    <img src="assets/img/inner-page/color-car-04.png" alt>
+                                                    <img src="assets/img/inner-page/color-car-04.png" alt />
                                                 </div>
                                                 <div class="content">
                                                     <h6>Lamborghini Murciélago (Orange)</h6>
@@ -773,424 +831,144 @@
                             <div class="title mb-30">
                                 <h5>Recent Used Car</h5>
                             </div>
-                            <ul class="nav nav-tabs" id="myTab6" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="new-car-tab" data-bs-toggle="tab"
-                                        data-bs-target="#new-car" type="button" role="tab" aria-controls="new-car"
-                                        aria-selected="true">New Car</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="used-car-tab" data-bs-toggle="tab"
-                                        data-bs-target="#used-car" type="button" role="tab" aria-controls="used-car"
-                                        aria-selected="false">Used Car</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="auction-car-tab" data-bs-toggle="tab"
-                                        data-bs-target="#auction-car" type="button" role="tab"
-                                        aria-controls="auction-car" aria-selected="false">Auction Car</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content mb-30" id="myTab6Content">
-                                <div class="tab-pane fade show active" id="new-car" role="tabpanel"
-                                    aria-labelledby="new-car-tab">
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-01.png"
-                                                    alt="image">
-                                            </div>
+
+                            <div class="tab-content mb-30">
+                                <div class="product-st-card1 two mb-30">
+                                    <div class="product-img">
+                                        <div class="product-price">
+                                            <span>$7,656.00</span>
                                         </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Mercedes-Benz-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
+                                        <div class="car-img">
+                                            <img class="img-fluid" src="assets/img/inner-page/sb-img-01.png"
+                                                alt="image" />
                                         </div>
                                     </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-02.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Hyundai Sonata-2022</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-03.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Lexus RX-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-04.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Ferrari 458 Italia</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="view-all-btn">
-                                        <a class="primary-btn3 two" href="car-listing-left-sidebar.html">
-                                            <svg width="35" height="21" viewBox="0 0 35 21"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11 20C5.47715 20 1 15.7467 1 10.5C1 5.25329 5.47715 1 11 1"
-                                                    stroke-linecap="round"></path>
-                                                <path
-                                                    d="M14.2597 3C14.1569 3 14.0583 3.04166 13.9856 3.11582C13.9129 3.18997 13.8721 3.29055 13.8721 3.39542C13.8721 3.50029 13.9129 3.60086 13.9856 3.67502C14.0583 3.74917 14.1569 3.79083 14.2597 3.79083H15.8104C15.9132 3.79083 16.0118 3.74917 16.0845 3.67502C16.1572 3.60086 16.198 3.50029 16.198 3.39542C16.198 3.29055 16.1572 3.18997 16.0845 3.11582C16.0118 3.04166 15.9132 3 15.8104 3H14.2597ZM16.7795 3C16.6767 3 16.5781 3.04166 16.5054 3.11582C16.4327 3.18997 16.3919 3.29055 16.3919 3.39542C16.3919 3.50029 16.4327 3.60086 16.5054 3.67502C16.5781 3.74917 16.6767 3.79083 16.7795 3.79083H21.3346C21.4374 3.79083 21.536 3.74917 21.6087 3.67502C21.6814 3.60086 21.7222 3.50029 21.7222 3.39542C21.7222 3.29055 21.6814 3.18997 21.6087 3.11582C21.536 3.04166 21.4374 3 21.3346 3H16.7795Z">
-                                                </path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M15.2292 5.76953C15.1264 5.76953 15.0278 5.81119 14.9551 5.88535C14.8824 5.9595 14.8415 6.06008 14.8415 6.16495C14.8415 6.26982 14.8824 6.3704 14.9551 6.44455C15.0278 6.51871 15.1264 6.56037 15.2292 6.56037H24.1454C25.653 6.56037 26.5822 6.79999 27.3256 7.18493C27.9575 7.51194 28.4672 7.9467 29.1055 8.49119C29.2375 8.60368 29.3749 8.72073 29.5201 8.84271L29.6101 8.91824L29.726 8.93069C33.2653 9.31069 34.0622 10.5309 34.2246 11.1557V12.6893C34.2246 12.7942 34.1838 12.8948 34.1111 12.9689C34.0384 13.0431 33.9398 13.0847 33.8369 13.0847H32.8356C32.6511 11.9627 31.6943 11.1077 30.5418 11.1077C29.3893 11.1077 28.4325 11.9627 28.248 13.0847H21.2058C21.0212 11.9627 20.0645 11.1077 18.912 11.1077C17.7594 11.1077 16.8027 11.9627 16.6182 13.0847H14.7446C14.6418 13.0847 14.5432 13.1264 14.4705 13.2006C14.3978 13.2747 14.3569 13.3753 14.3569 13.4802C14.3569 13.585 14.3978 13.6856 14.4705 13.7598C14.5432 13.8339 14.6418 13.8756 14.7446 13.8756H16.6182C16.8027 14.9976 17.7594 15.8527 18.912 15.8527C20.0645 15.8527 21.0212 14.9976 21.2058 13.8756H28.248C28.4325 14.9976 29.3893 15.8527 30.5418 15.8527C31.6943 15.8527 32.6511 14.9976 32.8356 13.8756H33.8369C34.1454 13.8756 34.4412 13.7506 34.6593 13.5281C34.8774 13.3057 34.9999 13.0039 34.9999 12.6893V11.0626L34.99 11.0187C34.7431 9.92754 33.5791 8.57502 29.9239 8.15706C29.8217 8.07086 29.7215 7.98505 29.6227 7.90063C28.9828 7.35397 28.3942 6.851 27.6766 6.4795C26.7966 6.02418 25.7391 5.76953 24.1454 5.76953H15.2292ZM28.9912 13.4802C28.9912 13.0607 29.1545 12.6584 29.4453 12.3618C29.7361 12.0651 30.1306 11.8985 30.5418 11.8985C30.9531 11.8985 31.3475 12.0651 31.6383 12.3618C31.9291 12.6584 32.0925 13.0607 32.0925 13.4802C32.0925 13.8996 31.9291 14.302 31.6383 14.5986C31.3475 14.8952 30.9531 15.0618 30.5418 15.0618C30.1306 15.0618 29.7361 14.8952 29.4453 14.5986C29.1545 14.302 28.9912 13.8996 28.9912 13.4802ZM18.912 11.8985C18.5007 11.8985 18.1063 12.0651 17.8155 12.3618C17.5247 12.6584 17.3613 13.0607 17.3613 13.4802C17.3613 13.8996 17.5247 14.302 17.8155 14.5986C18.1063 14.8952 18.5007 15.0618 18.912 15.0618C19.3232 15.0618 19.7176 14.8952 20.0084 14.5986C20.2992 14.302 20.4626 13.8996 20.4626 13.4802C20.4626 13.0607 20.2992 12.6584 20.0084 12.3618C19.7176 12.0651 19.3232 11.8985 18.912 11.8985Z">
-                                                </path>
-                                                <path
-                                                    d="M11 8.14151C11 8.03664 11.0408 7.93606 11.1135 7.86191C11.1862 7.78775 11.2848 7.74609 11.3877 7.74609H15.7489C15.8517 7.74609 15.9503 7.78775 16.023 7.86191C16.0957 7.93606 16.1365 8.03664 16.1365 8.14151C16.1365 8.24638 16.0957 8.34696 16.023 8.42111C15.9503 8.49527 15.8517 8.53693 15.7489 8.53693H11.3877C11.2848 8.53693 11.1862 8.49527 11.1135 8.42111C11.0408 8.34696 11 8.24638 11 8.14151ZM26.6836 8.65278C26.7563 8.72694 26.7971 8.82749 26.7971 8.93234C26.7971 9.03719 26.7563 9.13775 26.6836 9.2119L26.6532 9.24294C26.2897 9.61367 25.7968 9.82197 25.2828 9.82203H19.1409C19.0381 9.82203 18.9395 9.78037 18.8668 9.70622C18.7941 9.63206 18.7532 9.53149 18.7532 9.42662C18.7532 9.32174 18.7941 9.22117 18.8668 9.14701C18.9395 9.07286 19.0381 9.0312 19.1409 9.0312H25.2826C25.4354 9.03122 25.5866 9.00055 25.7277 8.94095C25.8688 8.88134 25.997 8.79397 26.105 8.68382L26.1355 8.65278C26.2082 8.57866 26.3068 8.53701 26.4096 8.53701C26.5123 8.53701 26.6109 8.57866 26.6836 8.65278ZM19.5286 17.7304C19.5286 17.6255 19.5694 17.5249 19.6421 17.4508C19.7148 17.3766 19.8134 17.335 19.9162 17.335H21.5638C21.6666 17.335 21.7652 17.3766 21.8379 17.4508C21.9106 17.5249 21.9514 17.6255 21.9514 17.7304C21.9514 17.8352 21.9106 17.9358 21.8379 18.01C21.7652 18.0841 21.6666 18.1258 21.5638 18.1258H19.9162C19.8134 18.1258 19.7148 18.0841 19.6421 18.01C19.5694 17.9358 19.5286 17.8352 19.5286 17.7304ZM22.2422 17.7304C22.2422 17.6255 22.283 17.5249 22.3557 17.4508C22.4284 17.3766 22.527 17.335 22.6299 17.335H26.991C27.0939 17.335 27.1925 17.3766 27.2652 17.4508C27.3379 17.5249 27.3787 17.6255 27.3787 17.7304C27.3787 17.8352 27.3379 17.9358 27.2652 18.01C27.1925 18.0841 27.0939 18.1258 26.991 18.1258H22.6299C22.527 18.1258 22.4284 18.0841 22.3557 18.01C22.283 17.9358 22.2422 17.8352 22.2422 17.7304Z">
-                                                </path>
-                                            </svg>
-                                            View All Car
-                                        </a>
+                                    <div class="product-content">
+                                        <h6>
+                                            <a href="car-details.html">Mercedes-Benz-2023</a>
+                                        </h6>
+                                        <ul class="features">
+                                            <li>
+                                                <img src="assets/img/home4/icon/menual.svg" alt />
+                                                Automatic
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/fuel.svg" alt />
+                                                Petrol
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/electric.svg" alt />
+                                                Electric
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="used-car" role="tabpanel" aria-labelledby="used-car-tab">
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-01.png"
-                                                    alt="image">
-                                            </div>
+                                <div class="product-st-card1 two mb-30">
+                                    <div class="product-img">
+                                        <div class="product-price">
+                                            <span>$7,656.00</span>
                                         </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Mercedes-Benz-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
+                                        <div class="car-img">
+                                            <img class="img-fluid" src="assets/img/inner-page/sb-img-02.png"
+                                                alt="image" />
                                         </div>
                                     </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-02.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Hyundai Sonata-2022</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-03.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Lexus RX-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-04.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Ferrari 458 Italia</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="view-all-btn">
-                                        <a class="primary-btn3 two" href="car-listing-left-sidebar.html">
-                                            <svg width="35" height="21" viewBox="0 0 35 21"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11 20C5.47715 20 1 15.7467 1 10.5C1 5.25329 5.47715 1 11 1"
-                                                    stroke-linecap="round"></path>
-                                                <path
-                                                    d="M14.2597 3C14.1569 3 14.0583 3.04166 13.9856 3.11582C13.9129 3.18997 13.8721 3.29055 13.8721 3.39542C13.8721 3.50029 13.9129 3.60086 13.9856 3.67502C14.0583 3.74917 14.1569 3.79083 14.2597 3.79083H15.8104C15.9132 3.79083 16.0118 3.74917 16.0845 3.67502C16.1572 3.60086 16.198 3.50029 16.198 3.39542C16.198 3.29055 16.1572 3.18997 16.0845 3.11582C16.0118 3.04166 15.9132 3 15.8104 3H14.2597ZM16.7795 3C16.6767 3 16.5781 3.04166 16.5054 3.11582C16.4327 3.18997 16.3919 3.29055 16.3919 3.39542C16.3919 3.50029 16.4327 3.60086 16.5054 3.67502C16.5781 3.74917 16.6767 3.79083 16.7795 3.79083H21.3346C21.4374 3.79083 21.536 3.74917 21.6087 3.67502C21.6814 3.60086 21.7222 3.50029 21.7222 3.39542C21.7222 3.29055 21.6814 3.18997 21.6087 3.11582C21.536 3.04166 21.4374 3 21.3346 3H16.7795Z">
-                                                </path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M15.2292 5.76953C15.1264 5.76953 15.0278 5.81119 14.9551 5.88535C14.8824 5.9595 14.8415 6.06008 14.8415 6.16495C14.8415 6.26982 14.8824 6.3704 14.9551 6.44455C15.0278 6.51871 15.1264 6.56037 15.2292 6.56037H24.1454C25.653 6.56037 26.5822 6.79999 27.3256 7.18493C27.9575 7.51194 28.4672 7.9467 29.1055 8.49119C29.2375 8.60368 29.3749 8.72073 29.5201 8.84271L29.6101 8.91824L29.726 8.93069C33.2653 9.31069 34.0622 10.5309 34.2246 11.1557V12.6893C34.2246 12.7942 34.1838 12.8948 34.1111 12.9689C34.0384 13.0431 33.9398 13.0847 33.8369 13.0847H32.8356C32.6511 11.9627 31.6943 11.1077 30.5418 11.1077C29.3893 11.1077 28.4325 11.9627 28.248 13.0847H21.2058C21.0212 11.9627 20.0645 11.1077 18.912 11.1077C17.7594 11.1077 16.8027 11.9627 16.6182 13.0847H14.7446C14.6418 13.0847 14.5432 13.1264 14.4705 13.2006C14.3978 13.2747 14.3569 13.3753 14.3569 13.4802C14.3569 13.585 14.3978 13.6856 14.4705 13.7598C14.5432 13.8339 14.6418 13.8756 14.7446 13.8756H16.6182C16.8027 14.9976 17.7594 15.8527 18.912 15.8527C20.0645 15.8527 21.0212 14.9976 21.2058 13.8756H28.248C28.4325 14.9976 29.3893 15.8527 30.5418 15.8527C31.6943 15.8527 32.6511 14.9976 32.8356 13.8756H33.8369C34.1454 13.8756 34.4412 13.7506 34.6593 13.5281C34.8774 13.3057 34.9999 13.0039 34.9999 12.6893V11.0626L34.99 11.0187C34.7431 9.92754 33.5791 8.57502 29.9239 8.15706C29.8217 8.07086 29.7215 7.98505 29.6227 7.90063C28.9828 7.35397 28.3942 6.851 27.6766 6.4795C26.7966 6.02418 25.7391 5.76953 24.1454 5.76953H15.2292ZM28.9912 13.4802C28.9912 13.0607 29.1545 12.6584 29.4453 12.3618C29.7361 12.0651 30.1306 11.8985 30.5418 11.8985C30.9531 11.8985 31.3475 12.0651 31.6383 12.3618C31.9291 12.6584 32.0925 13.0607 32.0925 13.4802C32.0925 13.8996 31.9291 14.302 31.6383 14.5986C31.3475 14.8952 30.9531 15.0618 30.5418 15.0618C30.1306 15.0618 29.7361 14.8952 29.4453 14.5986C29.1545 14.302 28.9912 13.8996 28.9912 13.4802ZM18.912 11.8985C18.5007 11.8985 18.1063 12.0651 17.8155 12.3618C17.5247 12.6584 17.3613 13.0607 17.3613 13.4802C17.3613 13.8996 17.5247 14.302 17.8155 14.5986C18.1063 14.8952 18.5007 15.0618 18.912 15.0618C19.3232 15.0618 19.7176 14.8952 20.0084 14.5986C20.2992 14.302 20.4626 13.8996 20.4626 13.4802C20.4626 13.0607 20.2992 12.6584 20.0084 12.3618C19.7176 12.0651 19.3232 11.8985 18.912 11.8985Z">
-                                                </path>
-                                                <path
-                                                    d="M11 8.14151C11 8.03664 11.0408 7.93606 11.1135 7.86191C11.1862 7.78775 11.2848 7.74609 11.3877 7.74609H15.7489C15.8517 7.74609 15.9503 7.78775 16.023 7.86191C16.0957 7.93606 16.1365 8.03664 16.1365 8.14151C16.1365 8.24638 16.0957 8.34696 16.023 8.42111C15.9503 8.49527 15.8517 8.53693 15.7489 8.53693H11.3877C11.2848 8.53693 11.1862 8.49527 11.1135 8.42111C11.0408 8.34696 11 8.24638 11 8.14151ZM26.6836 8.65278C26.7563 8.72694 26.7971 8.82749 26.7971 8.93234C26.7971 9.03719 26.7563 9.13775 26.6836 9.2119L26.6532 9.24294C26.2897 9.61367 25.7968 9.82197 25.2828 9.82203H19.1409C19.0381 9.82203 18.9395 9.78037 18.8668 9.70622C18.7941 9.63206 18.7532 9.53149 18.7532 9.42662C18.7532 9.32174 18.7941 9.22117 18.8668 9.14701C18.9395 9.07286 19.0381 9.0312 19.1409 9.0312H25.2826C25.4354 9.03122 25.5866 9.00055 25.7277 8.94095C25.8688 8.88134 25.997 8.79397 26.105 8.68382L26.1355 8.65278C26.2082 8.57866 26.3068 8.53701 26.4096 8.53701C26.5123 8.53701 26.6109 8.57866 26.6836 8.65278ZM19.5286 17.7304C19.5286 17.6255 19.5694 17.5249 19.6421 17.4508C19.7148 17.3766 19.8134 17.335 19.9162 17.335H21.5638C21.6666 17.335 21.7652 17.3766 21.8379 17.4508C21.9106 17.5249 21.9514 17.6255 21.9514 17.7304C21.9514 17.8352 21.9106 17.9358 21.8379 18.01C21.7652 18.0841 21.6666 18.1258 21.5638 18.1258H19.9162C19.8134 18.1258 19.7148 18.0841 19.6421 18.01C19.5694 17.9358 19.5286 17.8352 19.5286 17.7304ZM22.2422 17.7304C22.2422 17.6255 22.283 17.5249 22.3557 17.4508C22.4284 17.3766 22.527 17.335 22.6299 17.335H26.991C27.0939 17.335 27.1925 17.3766 27.2652 17.4508C27.3379 17.5249 27.3787 17.6255 27.3787 17.7304C27.3787 17.8352 27.3379 17.9358 27.2652 18.01C27.1925 18.0841 27.0939 18.1258 26.991 18.1258H22.6299C22.527 18.1258 22.4284 18.0841 22.3557 18.01C22.283 17.9358 22.2422 17.8352 22.2422 17.7304Z">
-                                                </path>
-                                            </svg>
-                                            View All Car
-                                        </a>
+                                    <div class="product-content">
+                                        <h6>
+                                            <a href="car-details.html">Hyundai Sonata-2022</a>
+                                        </h6>
+                                        <ul class="features">
+                                            <li>
+                                                <img src="assets/img/home4/icon/menual.svg" alt />
+                                                Automatic
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/fuel.svg" alt />
+                                                Petrol
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/electric.svg" alt />
+                                                Electric
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="auction-car" role="tabpanel"
-                                    aria-labelledby="auction-car-tab">
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-01.png"
-                                                    alt="image">
-                                            </div>
+                                <div class="product-st-card1 two mb-30">
+                                    <div class="product-img">
+                                        <div class="product-price">
+                                            <span>$7,656.00</span>
                                         </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Mercedes-Benz-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
+                                        <div class="car-img">
+                                            <img class="img-fluid" src="assets/img/inner-page/sb-img-03.png"
+                                                alt="image" />
                                         </div>
                                     </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-02.png"
-                                                    alt="image">
-                                            </div>
+                                    <div class="product-content">
+                                        <h6><a href="car-details.html">Lexus RX-2023</a></h6>
+                                        <ul class="features">
+                                            <li>
+                                                <img src="assets/img/home4/icon/menual.svg" alt />
+                                                Automatic
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/fuel.svg" alt />
+                                                Petrol
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/electric.svg" alt />
+                                                Electric
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-st-card1 two mb-30">
+                                    <div class="product-img">
+                                        <div class="product-price">
+                                            <span>$7,656.00</span>
                                         </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Hyundai Sonata-2022</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
+                                        <div class="car-img">
+                                            <img class="img-fluid" src="assets/img/inner-page/sb-img-04.png"
+                                                alt="image" />
                                         </div>
                                     </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-03.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Lexus RX-2023</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="product-content">
+                                        <h6>
+                                            <a href="car-details.html">Ferrari 458 Italia</a>
+                                        </h6>
+                                        <ul class="features">
+                                            <li>
+                                                <img src="assets/img/home4/icon/menual.svg" alt />
+                                                Automatic
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/fuel.svg" alt />
+                                                Petrol
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/home4/icon/electric.svg" alt />
+                                                Electric
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="product-st-card1 two mb-30">
-                                        <div class="product-img">
-                                            <div class="product-price">
-                                                <span>$7,656.00</span>
-                                            </div>
-                                            <div class="car-img">
-                                                <img class="img-fluid" src="assets/img/inner-page/sb-img-04.png"
-                                                    alt="image">
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h6><a href="car-details.html">Ferrari 458 Italia</a></h6>
-                                            <ul class="features">
-                                                <li>
-                                                    <img src="assets/img/home4/icon/menual.svg" alt>
-                                                    Automatic
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/fuel.svg" alt>
-                                                    Petrol
-                                                </li>
-                                                <li>
-                                                    <img src="assets/img/home4/icon/electric.svg" alt>
-                                                    Electric
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="view-all-btn">
-                                        <a class="primary-btn3 two" href="car-listing-left-sidebar.html">
-                                            <svg width="35" height="21" viewBox="0 0 35 21"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11 20C5.47715 20 1 15.7467 1 10.5C1 5.25329 5.47715 1 11 1"
-                                                    stroke-linecap="round"></path>
-                                                <path
-                                                    d="M14.2597 3C14.1569 3 14.0583 3.04166 13.9856 3.11582C13.9129 3.18997 13.8721 3.29055 13.8721 3.39542C13.8721 3.50029 13.9129 3.60086 13.9856 3.67502C14.0583 3.74917 14.1569 3.79083 14.2597 3.79083H15.8104C15.9132 3.79083 16.0118 3.74917 16.0845 3.67502C16.1572 3.60086 16.198 3.50029 16.198 3.39542C16.198 3.29055 16.1572 3.18997 16.0845 3.11582C16.0118 3.04166 15.9132 3 15.8104 3H14.2597ZM16.7795 3C16.6767 3 16.5781 3.04166 16.5054 3.11582C16.4327 3.18997 16.3919 3.29055 16.3919 3.39542C16.3919 3.50029 16.4327 3.60086 16.5054 3.67502C16.5781 3.74917 16.6767 3.79083 16.7795 3.79083H21.3346C21.4374 3.79083 21.536 3.74917 21.6087 3.67502C21.6814 3.60086 21.7222 3.50029 21.7222 3.39542C21.7222 3.29055 21.6814 3.18997 21.6087 3.11582C21.536 3.04166 21.4374 3 21.3346 3H16.7795Z">
-                                                </path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M15.2292 5.76953C15.1264 5.76953 15.0278 5.81119 14.9551 5.88535C14.8824 5.9595 14.8415 6.06008 14.8415 6.16495C14.8415 6.26982 14.8824 6.3704 14.9551 6.44455C15.0278 6.51871 15.1264 6.56037 15.2292 6.56037H24.1454C25.653 6.56037 26.5822 6.79999 27.3256 7.18493C27.9575 7.51194 28.4672 7.9467 29.1055 8.49119C29.2375 8.60368 29.3749 8.72073 29.5201 8.84271L29.6101 8.91824L29.726 8.93069C33.2653 9.31069 34.0622 10.5309 34.2246 11.1557V12.6893C34.2246 12.7942 34.1838 12.8948 34.1111 12.9689C34.0384 13.0431 33.9398 13.0847 33.8369 13.0847H32.8356C32.6511 11.9627 31.6943 11.1077 30.5418 11.1077C29.3893 11.1077 28.4325 11.9627 28.248 13.0847H21.2058C21.0212 11.9627 20.0645 11.1077 18.912 11.1077C17.7594 11.1077 16.8027 11.9627 16.6182 13.0847H14.7446C14.6418 13.0847 14.5432 13.1264 14.4705 13.2006C14.3978 13.2747 14.3569 13.3753 14.3569 13.4802C14.3569 13.585 14.3978 13.6856 14.4705 13.7598C14.5432 13.8339 14.6418 13.8756 14.7446 13.8756H16.6182C16.8027 14.9976 17.7594 15.8527 18.912 15.8527C20.0645 15.8527 21.0212 14.9976 21.2058 13.8756H28.248C28.4325 14.9976 29.3893 15.8527 30.5418 15.8527C31.6943 15.8527 32.6511 14.9976 32.8356 13.8756H33.8369C34.1454 13.8756 34.4412 13.7506 34.6593 13.5281C34.8774 13.3057 34.9999 13.0039 34.9999 12.6893V11.0626L34.99 11.0187C34.7431 9.92754 33.5791 8.57502 29.9239 8.15706C29.8217 8.07086 29.7215 7.98505 29.6227 7.90063C28.9828 7.35397 28.3942 6.851 27.6766 6.4795C26.7966 6.02418 25.7391 5.76953 24.1454 5.76953H15.2292ZM28.9912 13.4802C28.9912 13.0607 29.1545 12.6584 29.4453 12.3618C29.7361 12.0651 30.1306 11.8985 30.5418 11.8985C30.9531 11.8985 31.3475 12.0651 31.6383 12.3618C31.9291 12.6584 32.0925 13.0607 32.0925 13.4802C32.0925 13.8996 31.9291 14.302 31.6383 14.5986C31.3475 14.8952 30.9531 15.0618 30.5418 15.0618C30.1306 15.0618 29.7361 14.8952 29.4453 14.5986C29.1545 14.302 28.9912 13.8996 28.9912 13.4802ZM18.912 11.8985C18.5007 11.8985 18.1063 12.0651 17.8155 12.3618C17.5247 12.6584 17.3613 13.0607 17.3613 13.4802C17.3613 13.8996 17.5247 14.302 17.8155 14.5986C18.1063 14.8952 18.5007 15.0618 18.912 15.0618C19.3232 15.0618 19.7176 14.8952 20.0084 14.5986C20.2992 14.302 20.4626 13.8996 20.4626 13.4802C20.4626 13.0607 20.2992 12.6584 20.0084 12.3618C19.7176 12.0651 19.3232 11.8985 18.912 11.8985Z">
-                                                </path>
-                                                <path
-                                                    d="M11 8.14151C11 8.03664 11.0408 7.93606 11.1135 7.86191C11.1862 7.78775 11.2848 7.74609 11.3877 7.74609H15.7489C15.8517 7.74609 15.9503 7.78775 16.023 7.86191C16.0957 7.93606 16.1365 8.03664 16.1365 8.14151C16.1365 8.24638 16.0957 8.34696 16.023 8.42111C15.9503 8.49527 15.8517 8.53693 15.7489 8.53693H11.3877C11.2848 8.53693 11.1862 8.49527 11.1135 8.42111C11.0408 8.34696 11 8.24638 11 8.14151ZM26.6836 8.65278C26.7563 8.72694 26.7971 8.82749 26.7971 8.93234C26.7971 9.03719 26.7563 9.13775 26.6836 9.2119L26.6532 9.24294C26.2897 9.61367 25.7968 9.82197 25.2828 9.82203H19.1409C19.0381 9.82203 18.9395 9.78037 18.8668 9.70622C18.7941 9.63206 18.7532 9.53149 18.7532 9.42662C18.7532 9.32174 18.7941 9.22117 18.8668 9.14701C18.9395 9.07286 19.0381 9.0312 19.1409 9.0312H25.2826C25.4354 9.03122 25.5866 9.00055 25.7277 8.94095C25.8688 8.88134 25.997 8.79397 26.105 8.68382L26.1355 8.65278C26.2082 8.57866 26.3068 8.53701 26.4096 8.53701C26.5123 8.53701 26.6109 8.57866 26.6836 8.65278ZM19.5286 17.7304C19.5286 17.6255 19.5694 17.5249 19.6421 17.4508C19.7148 17.3766 19.8134 17.335 19.9162 17.335H21.5638C21.6666 17.335 21.7652 17.3766 21.8379 17.4508C21.9106 17.5249 21.9514 17.6255 21.9514 17.7304C21.9514 17.8352 21.9106 17.9358 21.8379 18.01C21.7652 18.0841 21.6666 18.1258 21.5638 18.1258H19.9162C19.8134 18.1258 19.7148 18.0841 19.6421 18.01C19.5694 17.9358 19.5286 17.8352 19.5286 17.7304ZM22.2422 17.7304C22.2422 17.6255 22.283 17.5249 22.3557 17.4508C22.4284 17.3766 22.527 17.335 22.6299 17.335H26.991C27.0939 17.335 27.1925 17.3766 27.2652 17.4508C27.3379 17.5249 27.3787 17.6255 27.3787 17.7304C27.3787 17.8352 27.3379 17.9358 27.2652 18.01C27.1925 18.0841 27.0939 18.1258 26.991 18.1258H22.6299C22.527 18.1258 22.4284 18.0841 22.3557 18.01C22.283 17.9358 22.2422 17.8352 22.2422 17.7304Z">
-                                                </path>
-                                            </svg>
-                                            View All Car
-                                        </a>
-                                    </div>
+                                </div>
+                                <div class="view-all-btn">
+                                    <a class="primary-btn3 two" href="car-listing-left-sidebar.html">
+                                        <svg width="35" height="21" viewBox="0 0 35 21"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 20C5.47715 20 1 15.7467 1 10.5C1 5.25329 5.47715 1 11 1"
+                                                stroke-linecap="round"></path>
+                                            <path
+                                                d="M14.2597 3C14.1569 3 14.0583 3.04166 13.9856 3.11582C13.9129 3.18997 13.8721 3.29055 13.8721 3.39542C13.8721 3.50029 13.9129 3.60086 13.9856 3.67502C14.0583 3.74917 14.1569 3.79083 14.2597 3.79083H15.8104C15.9132 3.79083 16.0118 3.74917 16.0845 3.67502C16.1572 3.60086 16.198 3.50029 16.198 3.39542C16.198 3.29055 16.1572 3.18997 16.0845 3.11582C16.0118 3.04166 15.9132 3 15.8104 3H14.2597ZM16.7795 3C16.6767 3 16.5781 3.04166 16.5054 3.11582C16.4327 3.18997 16.3919 3.29055 16.3919 3.39542C16.3919 3.50029 16.4327 3.60086 16.5054 3.67502C16.5781 3.74917 16.6767 3.79083 16.7795 3.79083H21.3346C21.4374 3.79083 21.536 3.74917 21.6087 3.67502C21.6814 3.60086 21.7222 3.50029 21.7222 3.39542C21.7222 3.29055 21.6814 3.18997 21.6087 3.11582C21.536 3.04166 21.4374 3 21.3346 3H16.7795Z">
+                                            </path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.2292 5.76953C15.1264 5.76953 15.0278 5.81119 14.9551 5.88535C14.8824 5.9595 14.8415 6.06008 14.8415 6.16495C14.8415 6.26982 14.8824 6.3704 14.9551 6.44455C15.0278 6.51871 15.1264 6.56037 15.2292 6.56037H24.1454C25.653 6.56037 26.5822 6.79999 27.3256 7.18493C27.9575 7.51194 28.4672 7.9467 29.1055 8.49119C29.2375 8.60368 29.3749 8.72073 29.5201 8.84271L29.6101 8.91824L29.726 8.93069C33.2653 9.31069 34.0622 10.5309 34.2246 11.1557V12.6893C34.2246 12.7942 34.1838 12.8948 34.1111 12.9689C34.0384 13.0431 33.9398 13.0847 33.8369 13.0847H32.8356C32.6511 11.9627 31.6943 11.1077 30.5418 11.1077C29.3893 11.1077 28.4325 11.9627 28.248 13.0847H21.2058C21.0212 11.9627 20.0645 11.1077 18.912 11.1077C17.7594 11.1077 16.8027 11.9627 16.6182 13.0847H14.7446C14.6418 13.0847 14.5432 13.1264 14.4705 13.2006C14.3978 13.2747 14.3569 13.3753 14.3569 13.4802C14.3569 13.585 14.3978 13.6856 14.4705 13.7598C14.5432 13.8339 14.6418 13.8756 14.7446 13.8756H16.6182C16.8027 14.9976 17.7594 15.8527 18.912 15.8527C20.0645 15.8527 21.0212 14.9976 21.2058 13.8756H28.248C28.4325 14.9976 29.3893 15.8527 30.5418 15.8527C31.6943 15.8527 32.6511 14.9976 32.8356 13.8756H33.8369C34.1454 13.8756 34.4412 13.7506 34.6593 13.5281C34.8774 13.3057 34.9999 13.0039 34.9999 12.6893V11.0626L34.99 11.0187C34.7431 9.92754 33.5791 8.57502 29.9239 8.15706C29.8217 8.07086 29.7215 7.98505 29.6227 7.90063C28.9828 7.35397 28.3942 6.851 27.6766 6.4795C26.7966 6.02418 25.7391 5.76953 24.1454 5.76953H15.2292ZM28.9912 13.4802C28.9912 13.0607 29.1545 12.6584 29.4453 12.3618C29.7361 12.0651 30.1306 11.8985 30.5418 11.8985C30.9531 11.8985 31.3475 12.0651 31.6383 12.3618C31.9291 12.6584 32.0925 13.0607 32.0925 13.4802C32.0925 13.8996 31.9291 14.302 31.6383 14.5986C31.3475 14.8952 30.9531 15.0618 30.5418 15.0618C30.1306 15.0618 29.7361 14.8952 29.4453 14.5986C29.1545 14.302 28.9912 13.8996 28.9912 13.4802ZM18.912 11.8985C18.5007 11.8985 18.1063 12.0651 17.8155 12.3618C17.5247 12.6584 17.3613 13.0607 17.3613 13.4802C17.3613 13.8996 17.5247 14.302 17.8155 14.5986C18.1063 14.8952 18.5007 15.0618 18.912 15.0618C19.3232 15.0618 19.7176 14.8952 20.0084 14.5986C20.2992 14.302 20.4626 13.8996 20.4626 13.4802C20.4626 13.0607 20.2992 12.6584 20.0084 12.3618C19.7176 12.0651 19.3232 11.8985 18.912 11.8985Z">
+                                            </path>
+                                            <path
+                                                d="M11 8.14151C11 8.03664 11.0408 7.93606 11.1135 7.86191C11.1862 7.78775 11.2848 7.74609 11.3877 7.74609H15.7489C15.8517 7.74609 15.9503 7.78775 16.023 7.86191C16.0957 7.93606 16.1365 8.03664 16.1365 8.14151C16.1365 8.24638 16.0957 8.34696 16.023 8.42111C15.9503 8.49527 15.8517 8.53693 15.7489 8.53693H11.3877C11.2848 8.53693 11.1862 8.49527 11.1135 8.42111C11.0408 8.34696 11 8.24638 11 8.14151ZM26.6836 8.65278C26.7563 8.72694 26.7971 8.82749 26.7971 8.93234C26.7971 9.03719 26.7563 9.13775 26.6836 9.2119L26.6532 9.24294C26.2897 9.61367 25.7968 9.82197 25.2828 9.82203H19.1409C19.0381 9.82203 18.9395 9.78037 18.8668 9.70622C18.7941 9.63206 18.7532 9.53149 18.7532 9.42662C18.7532 9.32174 18.7941 9.22117 18.8668 9.14701C18.9395 9.07286 19.0381 9.0312 19.1409 9.0312H25.2826C25.4354 9.03122 25.5866 9.00055 25.7277 8.94095C25.8688 8.88134 25.997 8.79397 26.105 8.68382L26.1355 8.65278C26.2082 8.57866 26.3068 8.53701 26.4096 8.53701C26.5123 8.53701 26.6109 8.57866 26.6836 8.65278ZM19.5286 17.7304C19.5286 17.6255 19.5694 17.5249 19.6421 17.4508C19.7148 17.3766 19.8134 17.335 19.9162 17.335H21.5638C21.6666 17.335 21.7652 17.3766 21.8379 17.4508C21.9106 17.5249 21.9514 17.6255 21.9514 17.7304C21.9514 17.8352 21.9106 17.9358 21.8379 18.01C21.7652 18.0841 21.6666 18.1258 21.5638 18.1258H19.9162C19.8134 18.1258 19.7148 18.0841 19.6421 18.01C19.5694 17.9358 19.5286 17.8352 19.5286 17.7304ZM22.2422 17.7304C22.2422 17.6255 22.283 17.5249 22.3557 17.4508C22.4284 17.3766 22.527 17.335 22.6299 17.335H26.991C27.0939 17.335 27.1925 17.3766 27.2652 17.4508C27.3379 17.5249 27.3787 17.6255 27.3787 17.7304C27.3787 17.8352 27.3379 17.9358 27.2652 18.01C27.1925 18.0841 27.0939 18.1258 26.991 18.1258H22.6299C22.527 18.1258 22.4284 18.0841 22.3557 18.01C22.283 17.9358 22.2422 17.8352 22.2422 17.7304Z">
+                                            </path>
+                                        </svg>
+                                        View All Car
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1234,13 +1012,13 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1261,7 +1039,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14491" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14491" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1277,7 +1055,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14392" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14392" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1299,7 +1077,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14323" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14323" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1353,13 +1131,13 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1380,7 +1158,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14494" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14494" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1396,7 +1174,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14395" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14395" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1418,7 +1196,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14326" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14326" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1472,16 +1250,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1505,7 +1283,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_14497" style="mask-type:alpha"
+                                                    <mask id="mask0_611_14497" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1521,7 +1299,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1855855" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1855855" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1543,7 +1321,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1432777" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1432777" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1597,16 +1375,16 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-11.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-11.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1627,7 +1405,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1449888" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1449888" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1643,7 +1421,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_1439999" style="mask-type:alpha"
+                                                    <mask id="mask0_611_1439999" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1665,7 +1443,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143299" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143299" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1719,13 +1497,13 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-12.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-12.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1746,7 +1524,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144966" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144966" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1762,7 +1540,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143901" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143901" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1784,7 +1562,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143202" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143202" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1838,13 +1616,13 @@
                                         <div class="swiper product-img-slider">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/img/home1/product-img-13.png" alt="image">
+                                                    <img src="assets/img/home1/product-img-13.png" alt="image" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1865,7 +1643,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_144904" style="mask-type:alpha"
+                                                    <mask id="mask0_611_144904" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1881,7 +1659,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143905" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143905" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1903,7 +1681,7 @@
                                             <li>
                                                 <svg width="13" height="13" viewBox="0 0 13 13"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <mask id="mask0_611_143206" style="mask-type:alpha"
+                                                    <mask id="mask0_611_143206" style="mask-type: alpha"
                                                         maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
                                                         <rect width="13" height="13" />
                                                     </mask>
@@ -1964,12 +1742,11 @@
         </div>
     </div>
 
-
     <footer>
         <div class="container-fluid">
             <div class="footer-top">
                 <div
-                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5 ">
+                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5">
                     <div class="col d-flex justify-content-lg-center justify-content-sm-end">
                         <div class="footer-widget">
                             <div class="widget-title">
@@ -1981,7 +1758,9 @@
                                     <li><a href="single-brand-category.html">BMW</a></li>
                                     <li><a href="single-brand-category.html">Chevrolet</a></li>
                                     <li><a href="single-brand-category.html">Hyundai</a></li>
-                                    <li><a href="single-brand-category.html">Mercedes-Benz</a></li>
+                                    <li>
+                                        <a href="single-brand-category.html">Mercedes-Benz</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -1996,8 +1775,12 @@
                                     <li><a href="car-listing-left-sidebar.html">Pickup</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Sedan</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Wagon</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Family MPV</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Sport Coupe</a></li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Family MPV</a>
+                                    </li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Sport Coupe</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2019,7 +1802,7 @@
             </div>
             <div class="footer-center">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt></a>
+                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt /></a>
                 </div>
                 <div class="contact-area">
                     <div class="hotline-area">
@@ -2044,7 +1827,8 @@
                         </div>
                         <div class="content">
                             <span>To Send Mail</span>
-                            <h6><a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
+                            <h6>
+                                <a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
                                         class="__cf_email__"
                                         data-cfemail="046d6a626b446369656d682a676b69">[email&nbsp;protected]</span></a>
                             </h6>
@@ -2064,7 +1848,6 @@
             </div>
         </div>
     </footer>
-
 
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -2100,16 +1883,16 @@
 
     <script src="assets/js/custom.js"></script>
     <script>
-        $(".marquee_text").marquee({
-            direction: "left",
+        $('.marquee_text').marquee({
+            direction: 'left',
             duration: 25000,
             gap: 50,
             delayBeforeStart: 0,
             duplicated: true,
             startVisible: true,
         });
-        $(".marquee_text2").marquee({
-            direction: "left",
+        $('.marquee_text2').marquee({
+            direction: 'left',
             duration: 25000,
             gap: 50,
             delayBeforeStart: 0,
@@ -2119,12 +1902,13 @@
 
         window.addEventListener('scroll', function () {
             const services = document.querySelector('.car-details-menu');
-            services.classList.toggle("sticky", window.scrollY > 500);
+            services.classList.toggle('sticky', window.scrollY > 500);
         });
         // International phone Number
-        const phoneInputField = document.querySelector("#phone");
+        const phoneInputField = document.querySelector('#phone');
         const phoneInput = window.intlTelInput(phoneInputField, {
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            utilsScript:
+                'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
         });
     </script>
 </body>

@@ -2,50 +2,49 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet" />
 
-    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
 
-    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
 
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
-    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="assets/css/boxicons.min.css" rel="stylesheet" />
 
-    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/css/nice-select.css" rel="stylesheet" />
 
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-
-    <title>Drivco | Login</title>
-    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20">
+    <title>Drivco | Sign Up</title>
+    <link rel="icon" href="assets/img/sm-logo.svg" type="image/gif" sizes="20x20" />
 </head>
 
 <body class="tt-magic-cursor">
     <div class="top-bar">
         <div class="company-logo">
-            <a href="index.html"><img src="assets/img/logo.svg" alt></a>
+            <a href="index.html"><img src="assets/img/logo.svg" alt /></a>
         </div>
         <div class="search-area">
             <form>
                 <div class="form-inner">
-                    <input type="text" placeholder="VIN">
+                    <input type="text" placeholder="VIN" />
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </div>
             </form>
@@ -67,14 +66,46 @@
 
     <header class="header-area style-1">
         <div class="header-logo d-lg-none d-flex">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg"></a>
+            <a href="index.html"><img alt="image" class="img-fluid" src="assets/img/logo.svg" /></a>
         </div>
+
         <div class="main-menu">
-            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
-                <div class="mobile-logo-wrap">
-                    <a href="index.html"><img alt="image" src="assets/img/logo.svg"></a>
+            <div class="mmenu-top mobile-logo-area d-lg-none">
+                <div class="mmenu-top-columns">
+                    <div class="c1">
+                        <a href="index.html">
+                            <img class="mlogo" alt="logo" src="assets/img/logo.svg" />
+                        </a>
+                    </div>
+
+                    <div class="c2">
+                        <div class="mlanguages">
+                            <select id="languageSelect" class="nice-select">
+                                <option value="en" selected>EN</option>
+                                <option value="fr">FR</option>
+                                <option value="de">DE</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="m-vin-search mobile-logo-area d-lg-none">
+                <form action="" class="m-vin-search-form">
+                    <div class="m-vin-search-grid">
+                        <div class="input">
+                            <input type="text" placeholder="VIN" />
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
             <ul class="menu-list">
                 <li class="active">
                     <a href="index.html" class="">Home</a>
@@ -106,6 +137,7 @@
                     <a href="contact.html" class="drop-down">CONTACT</a>
                 </li>
             </ul>
+
             <div class="topbar-right d-lg-none d-block">
                 <a class="primary-btn3" href="signup.html">
                     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -116,6 +148,7 @@
                     SIGN UP
                 </a>
             </div>
+
             <div class="hotline-area d-lg-none d-flex">
                 <div class="icon">
                     <svg width="26" height="27" viewBox="0 0 26 27" xmlns="http://www.w3.org/2000/svg">
@@ -138,9 +171,9 @@
             </div>
         </div>
         <div class="nav-right d-flex jsutify-content-end align-items-center">
-            <div class="hotline-area d-xl-flex d-none">
+            <div class="hotline-area d-xl-flex">
                 <div class="icon">
-                    <img src="assets/img/home1/icon/hotline-icon.svg" alt>
+                    <img src="assets/img/home1/icon/hotline-icon.svg" alt />
                 </div>
                 <div class="content">
                     <span>To More Inquiry</span>
@@ -154,7 +187,7 @@
                     <option value="de">DE</option>
                 </select>
             </div>
-            <div class="sidebar-button mobile-menu-btn ">
+            <div class="sidebar-button mobile-menu-btn">
                 <span></span>
             </div>
         </div>
@@ -164,12 +197,14 @@
         <div class="container">
             <div class="row g-lg-4 gy-5">
                 <div class="col-lg-8 mx-auto">
-                    <div class="signUp-modal" style="display: block;">
+                    <div class="signUp-modal" style="display: block">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title" id="signUpModal01Label">Sign Up</h4>
-                                    <p>Already have an account? <a href="login.html">Log In</a></p>
+                                    <p>
+                                        Already have an account? <a href="login.html">Log In</a>
+                                    </p>
                                 </div>
                                 <div class="modal-body">
                                     <form>
@@ -177,44 +212,48 @@
                                             <div class="col-md-6">
                                                 <div class="form-inner">
                                                     <label>First Name*</label>
-                                                    <input type="text" placeholder="Daniel">
+                                                    <input type="text" placeholder="Daniel" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-inner">
                                                     <label>Last Name*</label>
-                                                    <input type="text" placeholder="Last name">
+                                                    <input type="text" placeholder="Last name" />
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-inner">
                                                     <label>Enter your email address*</label>
-                                                    <input type="email" placeholder="Type email">
+                                                    <input type="email" placeholder="Type email" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-inner">
                                                     <label>Password*</label>
-                                                    <input id="password" type="password" placeholder="*** ***">
+                                                    <input id="password" type="password" placeholder="*** ***" />
                                                     <i class="bi bi-eye-slash" id="togglePassword"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-inner">
                                                     <label>Confirm Password*</label>
-                                                    <input id="password2" type="password" placeholder="*** ***">
+                                                    <input id="password2" type="password" placeholder="*** ***" />
                                                     <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-inner">
-                                                    <button class="primary-btn2" type="submit">Sign Up Now</button>
+                                                    <button class="primary-btn2" type="submit">
+                                                        Sign Up Now
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="terms-conditon">
-                                            <p>By sign up,you agree to the <a href="terms-conditions.html">‘terms &amp;
-                                                    conditons’</a></p>
+                                            <p>
+                                                By sign up,you agree to the
+                                                <a href="terms-conditions.html">‘terms &amp; conditons’</a>
+                                            </p>
                                         </div>
                                     </form>
                                 </div>
@@ -226,12 +265,11 @@
         </div>
     </div>
 
-
     <footer>
         <div class="container-fluid">
             <div class="footer-top">
                 <div
-                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5 ">
+                    class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center g-lg-4 gy-5">
                     <div class="col d-flex justify-content-lg-center justify-content-sm-end">
                         <div class="footer-widget">
                             <div class="widget-title">
@@ -243,7 +281,9 @@
                                     <li><a href="single-brand-category.html">BMW</a></li>
                                     <li><a href="single-brand-category.html">Chevrolet</a></li>
                                     <li><a href="single-brand-category.html">Hyundai</a></li>
-                                    <li><a href="single-brand-category.html">Mercedes-Benz</a></li>
+                                    <li>
+                                        <a href="single-brand-category.html">Mercedes-Benz</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -258,8 +298,12 @@
                                     <li><a href="car-listing-left-sidebar.html">Pickup</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Sedan</a></li>
                                     <li><a href="car-listing-left-sidebar.html">Wagon</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Family MPV</a></li>
-                                    <li><a href="car-listing-left-sidebar.html">Sport Coupe</a></li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Family MPV</a>
+                                    </li>
+                                    <li>
+                                        <a href="car-listing-left-sidebar.html">Sport Coupe</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -281,7 +325,7 @@
             </div>
             <div class="footer-center">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt></a>
+                    <a href="index.html"><img src="assets/img/footer-logo.svg" alt /></a>
                 </div>
                 <div class="contact-area">
                     <div class="hotline-area">
@@ -306,7 +350,8 @@
                         </div>
                         <div class="content">
                             <span>To Send Mail</span>
-                            <h6><a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
+                            <h6>
+                                <a href="../../../cdn-cgi/l/email-protection#88e1e6eee7c8efe5e9e1e4a6ebe7e5"><span
                                         class="__cf_email__"
                                         data-cfemail="046d6a626b446369656d682a676b69">[email&nbsp;protected]</span></a>
                             </h6>
@@ -326,7 +371,6 @@
             </div>
         </div>
     </footer>
-
 
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
