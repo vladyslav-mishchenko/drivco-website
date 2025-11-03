@@ -159,6 +159,10 @@ header.style-1 .nav-right .mobile-menu-btn span {
 
 /* end mobile vin search */
 
+.car-title .vin {
+    display: block;
+}
+
 @media (max-width: 991px) {
     .nav-right .languages {
         display: none;
